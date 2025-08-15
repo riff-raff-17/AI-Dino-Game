@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dino (No Assets)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="hud">
+      <div class="title">DINO</div>
+      <div class="scores">
+        <span id="hi">HI 00000</span>
+        <span id="score">00000</span>
+      </div>
+    </header>
+
+    <canvas id="game" width="800" height="200" aria-label="Dino game" role="img"></canvas>
+
+    <section class="help" id="help">
+      <p>
+        Press <kbd>Space</kbd> / <kbd>↑</kbd> to jump, <kbd>↓</kbd> to duck.  
+        On mobile: tap to jump, hold to duck.
+      </p>
+      <button id="startBtn">Start</button>
+    </section>
+
+    <section class="footer">
+      <button id="restartBtn" class="hidden">Restart</button>
+      <label class="toggle">
+        <input type="checkbox" id="nightToggle" />
+        <span>Night mode</span>
+      </label>
+    </section>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
